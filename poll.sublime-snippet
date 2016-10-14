@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+var pollFor${1:Thing} = function(callback){
+  (function poll() {
+    var ${2:thing} = ${3:window.jQuery};
+    if (!$2) return setTimeout(poll, 50);
+    return callback($2);
+  })();
+};
+pollFor$1(function($2){
+	${4://code}
+});
+]]></content>
+
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>poll</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+	<!-- Optional: Description to show in the menu -->
+	<description>Poll for something using setTimeout</description>
+</snippet>

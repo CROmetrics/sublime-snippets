@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+\$.fn.${1:${TM_FILEPATH/(^.+crometrics-experiments\/[^\/]+\/)|((\/src)?\/[^\/]+\.js$)|\///g}_action} = function() {
+    \$(this).each(function(){
+        var \$this = \$(this);
+        ${2://code}
+    });
+};
+\$('${3:element}').$1();
+]]></content>
+
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>$.fn.</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+	<!-- Optional: Description to show in the menu -->
+	<description>$.fn.function = ...</description>
+</snippet>
