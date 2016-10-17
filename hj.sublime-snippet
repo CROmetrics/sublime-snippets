@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+// Hotjar tagging
+window.hj=window.hj||function(){(hj.q=hj.q||[]).push(arguments)};
+hj('trigger', '${TM_FILEPATH/(^.+crometrics-experiments\/[^\/]+\/)|((\/src)?\/[^\/]+\.js$)|\///g}');
+hj('tagRecording', ['${TM_FILEPATH/(^.+crometrics-experiments\/[^\/]+\/)|((\/src)?\/[^\/]+\.js$)|\///g}']);
+]]></content>
+
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>hj</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+	<!-- Optional: Description to show in the menu -->
+	<description>Add the HotJar trigger code</description>
+</snippet>
