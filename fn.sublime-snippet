@@ -1,10 +1,10 @@
 <snippet>
 	<content><![CDATA[
 \$.fn.${1:${TM_FILEPATH/(^.+crometrics-experiments\/[^\/]+\/)|((\/src)?\/[^\/]+\.js$)|\///g}_action} = function() {
-    \$(this).each(function(){
-        var \$this = \$(this);
-        ${2://code}
-    });
+	\$(this).each(function(){
+		var \$this = \$(this);
+		${2://code}
+	});
 };
 \$('${3:element}').$1();
 ]]></content>
