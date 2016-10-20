@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-var $this = $(this);
+var \$this = \$(this);
 
 ]]></content>
 
